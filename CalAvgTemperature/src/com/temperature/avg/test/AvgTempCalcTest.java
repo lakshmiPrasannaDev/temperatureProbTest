@@ -1,15 +1,14 @@
 package com.temperature.avg.test;
 
 
-import org.junit.Test;
-
-import com.temperature.avg.AvgTempCalc;
-
-import org.junit.Ignore;
 import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.junit.Test;
+
+import com.temperature.avg.AvgTempCalc;
 
 public class AvgTempCalcTest {
 
