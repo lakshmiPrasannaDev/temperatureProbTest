@@ -7,20 +7,21 @@ import java.util.Scanner;
 
 public class AvgTempCalc {
 
-
+	public static float total = 0, total1 = 0, total2 = 0, total3 = 0;
+	public static int count = 0, count1 = 0, count2 = 0, count3 = 0;
 	public static void main(String[] args) {
 			Scanner in = new Scanner(System.in);
 			List<String> tempInput = new ArrayList<String>();
 			for(int i =0; i<7 ;i++){
-			tempInput.add(in.nextLine());
+			  tempInput.add(in.nextLine());
 		}
 
 		oneSecondDiff(tempInput);
 	}
 
-	private static void oneSecondDiff(List<String> tempInput) {
-		float total =0,total1 = 0,total2=0,total3=0;
-		int count = 0,count1=0,count2=0,count3=0;
+	public static void oneSecondDiff(List<String> tempInput) {
+		
+	
 		Formatter fmt = new Formatter();Formatter fmt1 = new Formatter();Formatter fmt2 = new Formatter();Formatter fmt3 = new Formatter();
 		for(int i =0; i<tempInput.size();i++){
 			float val1 = Integer.parseInt(tempInput.get(i).substring(2, 7));
